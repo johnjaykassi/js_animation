@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <button class="btn tl"></button>
+        <button class="btn tr"></button>
+        <button class="btn bl"></button>
+        <button class="btn br"></button>
+        <div class="bar t"></div>
+        <div class="bar l"></div>
+        <div class="bar b"></div>
+        <div class="bar r"></div>
+    </div>
+    
+   
+
+
+    <script>
+       let boutton = document.querySelector(".btn1");
+       let carre = document.querySelector(".bar1");
+
+       boutton.addEventListener("click",function(e){
+        carre.style.backgroundColor="red";
+        console.log(e.target)
+       });
+
+       boutton.addEventListener('mouseover',function(){
+        carre.style.backgroundColor="yellow";
+        carre.style.fontSize="2rem";
+       });
+
+       boutton.addEventListener('dblclick',function(){
+        carre.style.backgroundColor="green";
+        boutton.style.transform="rotateZ(45deg)"
+       })
+       
+    </script>
+</body>
+</html>
